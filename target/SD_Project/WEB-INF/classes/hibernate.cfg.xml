@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://ec2-54-246-87-132.eu-west-1.compute.amazonaws.com:5432/dac915l3toctp6?sslmode=require</property>
+        <property name="connection.username">qbcowedazglgvu</property>
+        <property name="connection.password">9f3dc82b4d10fe5e626442dbf71ec815734765a8c1b8f240d49931db4c27c6f5</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="Models.FisaMedicala"/>
+        <mapping class="Models.MedicPojo"/>
+        <mapping class="Models.Pacient"/>
+        <mapping class="Models.Ingrijitor"/>
+        <mapping class="Models.IngtoPacient"/>
+        <mapping class="Models.Medtofisa"/>
+        <mapping class="Models.Medicamente"/>
+
+
+
+    </session-factory>
+</hibernate-configuration>
